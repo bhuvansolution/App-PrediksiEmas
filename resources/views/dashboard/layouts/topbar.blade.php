@@ -1,155 +1,87 @@
-<div class="top-bar">
-    <!-- BEGIN: Breadcrumb -->
-    <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
-        </ol>
-    </nav>
-    <!-- END: Breadcrumb -->
-
-    <!-- BEGIN: Notifications -->
-    <div class="intro-x dropdown mr-auto sm:mr-6">
-        <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button"
-            aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="bell"
-                class="notification__icon dark:text-slate-500"></i> </div>
-        <div class="notification-content pt-2 dropdown-menu">
-            <div class="notification-content__box dropdown-content">
-                <div class="notification-content__title">Notifications</div>
-                <div class="cursor-pointer relative flex items-center ">
-                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="/assets/images/profile-7.jpg">
-                        <div
-                            class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+<nav class="navbar navbar-expand navbar-light shadow senkatech-navbar mb-4 static-top">
+    <!-- Sidebar Toggle (senkatech-navbar) -->
+    <button id="sidebarToggle" class="btn btn-link  rounded-circle">
+        <i class="fa fa-bars"></i>
+    </button>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/navbar/menu-navbar.png" class="senkatech-ikon">&nbsp;Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="text-uppercase "><img src="assets/images/navbar/menu.png"
+                                    class="senkatech-ikon">&nbsp;Menu 1</span>
+                            <div class="dropdown-divider"></div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="form_v1.html"><img
+                                            src="assets/images/navbar/list.png">&nbsp;Form V1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="form_v2.html"><img
+                                            src="assets/images/navbar/list.png">&nbsp;Form V2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="form_v3.html"><img
+                                            src="assets/images/navbar/list.png">&nbsp;Form V3</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="ml-2 overflow-hidden">
-                        <div class="flex items-center">
-                            <a href="javascript:;" class="font-medium truncate mr-5">Kevin Spacey</a>
-                            <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
-                        </div>
-                        <div class="w-full truncate text-slate-500 mt-0.5">Lorem Ipsum is simply dummy
-                            text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry&#039;s standard dummy text ever since the 1500</div>
-                    </div>
-                </div>
-                <div class="cursor-pointer relative flex items-center mt-5">
-                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="/assets/images/profile-2.jpg">
-                        <div
-                            class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
-                        </div>
-                    </div>
-                    <div class="ml-2 overflow-hidden">
-                        <div class="flex items-center">
-                            <a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a>
-                            <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
-                        </div>
-                        <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief,
-                            Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                            Latin literature from 45 BC, making it over 20</div>
-                    </div>
-                </div>
-                <div class="cursor-pointer relative flex items-center mt-5">
-                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="/assets/images/profile-5.jpg">
-                        <div
-                            class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
-                        </div>
-                    </div>
-                    <div class="ml-2 overflow-hidden">
-                        <div class="flex items-center">
-                            <a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a>
-                            <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
-                        </div>
-                        <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of
-                            passages of Lorem Ipsum available, but the majority have suffered alteration in
-                            some form, by injected humour, or randomi</div>
-                    </div>
-                </div>
-                <div class="cursor-pointer relative flex items-center mt-5">
-                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="/assets/images/profile-9.jpg">
-                        <div
-                            class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
-                        </div>
-                    </div>
-                    <div class="ml-2 overflow-hidden">
-                        <div class="flex items-center">
-                            <a href="javascript:;" class="font-medium truncate mr-5">Morgan Freeman</a>
-                            <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
-                        </div>
-                        <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief,
-                            Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                            Latin literature from 45 BC, making it over 20</div>
-                    </div>
-                </div>
-                <div class="cursor-pointer relative flex items-center mt-5">
-                    <div class="w-12 h-12 flex-none image-fit mr-1">
-                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="/assets/images/profile-1.jpg">
-                        <div
-                            class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
-                        </div>
-                    </div>
-                    <div class="ml-2 overflow-hidden">
-                        <div class="flex items-center">
-                            <a href="javascript:;" class="font-medium truncate mr-5">Denzel
-                                Washington</a>
-                            <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">03:20 PM</div>
-                        </div>
-                        <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief,
-                            Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                            Latin literature from 45 BC, making it over 20</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- END: Notifications -->
-    <!-- BEGIN: Account Menu -->
-    <div class="intro-x dropdown w-8 h-8">
-        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button"
-            aria-expanded="false" data-tw-toggle="dropdown">
-            <img alt="Midone - HTML Admin Template" src="/assets/images/profile-5.jpg">
-        </div>
-        <div class="dropdown-menu w-56">
-            <ul class="dropdown-content bg-primary text-white">
-                <li class="p-2">
-                    <div class="font-medium">Kevin Spacey</div>
-                    <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Software Engineer</div>
-                </li>
-                <li>
-                    <hr class="dropdown-divider border-white/[0.08]">
-                </li>
-                <li>
-                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user"
-                            class="w-4 h-4 mr-2"></i> Profile </a>
-                </li>
-                <li>
-                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit"
-                            class="w-4 h-4 mr-2"></i> Add Account </a>
-                </li>
-                <li>
-                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock"
-                            class="w-4 h-4 mr-2"></i> Reset Password </a>
-                </li>
-                <li>
-                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle"
-                            class="w-4 h-4 mr-2"></i> Help </a>
-                </li>
-                <li>
-                    <hr class="dropdown-divider border-white/[0.08]">
-                </li>
-                <li>
-                    <form action="/logout" method="post">
-                        @csrf
-                        <button class="dropdown-item hover:bg-white/5" type="submit">
-                            <i data-lucide="log-out" class="w-4 h-4 mr-2"></i> Logout
-                        </button>
-                    </form>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- END: Account Menu -->
-</div>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <div class="senkatech-navbar-divider d-none d-sm-block"></div>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Sukma Mangar SP</span>
+                <img class="img-profile rounded-circle" src="assets/images/user.png">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="list_permission.html.html">
+                    <i class="far fa-list-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Perms List
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="create_permission.html">
+                    <i class="fas fa-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Perms Form
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="list_group.html">
+                    <i class="far fa-list-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Group List
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="create_group.html">
+                    <i class="fas fa-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Group Form
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="list_user.html">
+                    <i class="far fa-list-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    User List
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="create_user.html">
+                    <i class="fas fa-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                    User Form
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-red-400"></i>
+                    Logout
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>

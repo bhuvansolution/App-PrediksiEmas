@@ -1,0 +1,17 @@
+/*class untuk header*/
+.senkatech-header {
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	height: auto;
+	margin-bottom: 0;
+	background-color:#fff;
+	color: #333;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+
+}
+/*end class*/

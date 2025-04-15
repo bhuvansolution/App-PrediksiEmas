@@ -1,0 +1,142 @@
+body {
+  background-color: #dee4f56e;
+}
+.background-login {
+  width: 100%;
+}
+/*--------------------24-10-2019----------------------*/
+/*class yang digunakan untuk mengatur logo pada login*/
+.senkatech-login-logo{
+  margin-top: 20px;
+  width: 150px;
+}
+/*end class*/
+/*--------*/
+/*----------------------24-10-2019------------------------*/
+/*class yang digunakan untuk mengatur container pda login*/
+.senkatech-login-container {
+  padding: 80px 0;
+}
+.senkatech-login-container .image-holder {
+  display: table-cell;
+  width: auto;
+  height: 450px;
+  background-size: cover;
+}
+.senkatech-login-container .senkatech-login-form-container {
+  display: table;
+  max-width: 850px;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+.senkatech-login-container form {
+  display: table-cell;
+  width: 370px;
+  background-color:#dee4f5;
+  padding: 40px 60px;
+  color: #000;
+}
+@media (max-width:991px) {
+  .senkatech-login-container form {
+    padding: 40px;
+  }
+}
+.senkatech-login-container form .form-control {
+  background: #f7f9fc;
+  border: none;
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 6px;
+}
+.senkatech-login-container form .form-check {
+  font-size: 13px;
+  line-height: 20px;
+}
+.senkatech-login-container form .btn-primary {
+  background: #f4476b;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 35px;
+  text-shadow: none;
+  outline: none !important;
+}
+.senkatech-login-container form .btn-primary:active {
+  transform: translateY(1px);
+}
+.senkatech-login-container form .already {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+}
+/*end class*/
+/*--------*/
+
+/*swing animated infinite style="padding-right: 0px;font-size: 66px;color: #28a745;"*/
+/*----------------------23-10-2019---------------------*/
+/*class yang digunakan untuuk mengatur nama perusahaan*/
+.senkatech-login-judul {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fd7e14;
+  letter-spacing: 5px;
+}
+/*end class*/
+/*-------------------------23-10-2019---------------------*/
+/*class yang digunakan untuk mengatur subjudul pada login*/
+.senkatech-login-keterangan {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 16px;
+  color:#262261;
+  letter-spacing: 1px;
+}
+/*end class*/
+/*--------*/
+
+/*-----------------------23-10-2019--------------------*/
+/*class yang digunakan untuk mengatur inputan pada login*/
+.form-control { 
+  margin-top: 20px;
+  font-size: 12px;
+  height: 30px;
+}
+/*end class*/
+/*--------*/
+/*-------------------23-10-2019--------------------*/
+/*class yang diguakan untuk mengatur button login */
+.senkatech-login-btn {
+ padding-left: 10px;
+ padding-right :10px;
+ padding-bottom: 3px;
+ padding-top :5px;
+ font-size: 11px;
+ width: auto;
+ height: 27px;
+ background-color:#262261 !important;
+ color: #fff !important;
+}
+/*end class*/
+/*--------*/
+/*claass yang digunakan untuk mengatur font eye pada login*/
+.field-icon {
+  float: right;
+  font-size: 12px;
+  padding-right: 20px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
+}
+/*end class*/
+p{
+  font-size: 12px;
+}

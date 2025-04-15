@@ -1,0 +1,593 @@
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #000;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.sidebar .nav-item.dropdown .dropdown-toggle::after,
+.senkatech-navbar .nav-item.dropdown .dropdown-toggle::after {
+    width: 1rem;
+    text-align: center;
+    float: right;
+    vertical-align: 0;
+    border: 0;
+    font-weight: 900;
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free'
+}
+
+.sidebar .nav-item.dropdown.show .dropdown-toggle::after,
+.senkatech-navbar .nav-item.dropdown.show .dropdown-toggle::after {
+    content: '\f107'
+}
+.bg-white {
+    background-color: #292929 !important;
+}
+
+.sidebar .nav-item .nav-link,
+.senkatech-navbar .nav-item .nav-link {
+    position: relative
+}
+
+.sidebar .nav-item .nav-link .badge-counter,
+.senkatech-navbar .nav-item .nav-link .badge-counter {
+    position: absolute;
+    transform: scale(.7);
+    transform-origin: top right;
+    right: .25rem;
+    margin-top: -.25rem
+}
+
+.sidebar .nav-item .nav-link .img-profile,
+.senkatech-navbar .nav-item .nav-link .img-profile {
+    height: 2rem;
+    width: 2rem
+}
+
+.senkatech-navbar {
+    height: 4.375rem
+}
+
+.senkatech-navbar #sidebarToggleTop {
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+.senkatech-navbar #sidebarToggleTop:hover {
+    background-color: #eaecf4
+}
+
+.senkatech-navbar #sidebarToggleTop:active {
+    background-color: #dddfeb
+}
+
+.senkatech-navbar .navbar-search {
+    width: 25rem
+}
+
+.senkatech-navbar .navbar-search input {
+    font-size: .85rem;
+    height: auto
+}
+
+.senkatech-navbar .senkatech-navbar-divider {
+    width: 0;
+    border-right: 1px solid #e3e6f0;
+    height: calc(4.375rem - 2rem);
+    margin: auto 1rem
+}
+
+.senkatech-navbar .nav-item .nav-link {
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    padding: 0 .75rem
+}
+
+.senkatech-navbar .nav-item .nav-link:focus {
+    outline: 0
+}
+
+.senkatech-navbar .nav-item:focus {
+    outline: 0
+}
+
+.senkatech-navbar .dropdown {
+    position: static
+}
+
+.senkatech-navbar .dropdown .dropdown-menu {
+ /*   width: calc(100% - 1.5rem);*/
+    right: 14px;
+}
+
+.senkatech-navbar .dropdown-list {
+    padding: 0;
+    border: none;
+    overflow: hidden
+}
+
+.senkatech-navbar .dropdown-list .dropdown-header {
+    background-color: #4e73df;
+    border: 1px solid #4e73df;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #fff
+}
+
+.senkatech-navbar .dropdown-list .dropdown-item {
+    white-space: normal;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-left: 1px solid #e3e6f0;
+    border-right: 1px solid #e3e6f0;
+    border-bottom: 1px solid #e3e6f0;
+    line-height: 1.3rem
+}
+
+.senkatech-navbar .dropdown-list .dropdown-item .dropdown-list-image {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+.senkatech-navbar .dropdown-list .dropdown-item .dropdown-list-image img {
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+.senkatech-navbar .dropdown-list .dropdown-item .dropdown-list-image .status-indicator {
+    background-color: #eaecf4;
+    height: .75rem;
+    width: .75rem;
+    /*border-radius: 100%;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: .125rem solid #fff
+}
+
+.senkatech-navbar .dropdown-list .dropdown-item .text-truncate {
+    max-width: 10rem
+}
+
+.senkatech-navbar .dropdown-list .dropdown-item:active {
+    background-color: #eaecf4;
+    color: #3a3b45
+}
+
+@media (min-width:576px) {
+    .senkatech-navbar .dropdown {
+        position: relative
+    }
+    .senkatech-navbar .dropdown .dropdown-menu {
+       /* width: auto;*/
+       /* right: 0*/
+    }
+    .senkatech-navbar .dropdown-list {
+        width: 20rem!important
+    }
+    .senkatech-navbar .dropdown-list .dropdown-item .text-truncate {
+        max-width: 13.375rem
+    }
+}
+
+.senkatech-navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #000
+}
+
+.senkatech-navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #b7b9cc
+}
+
+.senkatech-navbar.navbar-light .navbar-nav .nav-item .nav-link:active {
+    color: #858796
+}
+
+
+.navbar {
+    position: relative;
+    /*  border-bottom-right-radius: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color:#fff;
+}
+
+.navbar>.container,
+.navbar>.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    text-decoration: none
+}
+
+.navbar-nav {
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none
+}
+
+.navbar-text {
+    display: inline-block;
+    padding-top: .5rem;
+    padding-bottom: .5rem
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .35rem
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration: none
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%
+}
+
+@media (max-width:575.98px) {
+    .navbar-expand-sm>.container,
+    .navbar-expand-sm>.container-fluid {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+@media (min-width:576px) {
+    .navbar-expand-sm {
+        flex-flow: row nowrap;
+        justify-content: flex-start
+    }
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: row
+    }
+    .navbar-expand-sm .navbar-nav .dropdown-menu {
+        position: absolute
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+    .navbar-expand-sm>.container,
+    .navbar-expand-sm>.container-fluid {
+        flex-wrap: nowrap
+    }
+    .navbar-expand-sm .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto
+    }
+    .navbar-expand-sm .navbar-toggler {
+        display: none
+    }
+}
+
+@media (max-width:767.98px) {
+    .navbar-expand-md>.container,
+    .navbar-expand-md>.container-fluid {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+@media (min-width:768px) {
+    .navbar-expand-md {
+        flex-flow: row nowrap;
+        justify-content: flex-start
+    }
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+    .navbar-expand-md>.container,
+    .navbar-expand-md>.container-fluid {
+        flex-wrap: nowrap
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: none
+    }
+}
+
+@media (max-width:991.98px) {
+    .navbar-expand-lg>.container,
+    .navbar-expand-lg>.container-fluid {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg {
+        flex-flow: row nowrap;
+        justify-content: flex-start
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+    .navbar-expand-lg>.container,
+    .navbar-expand-lg>.container-fluid {
+        flex-wrap: nowrap
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: none
+    }
+}
+
+@media (max-width:1199.98px) {
+    .navbar-expand-xl>.container,
+    .navbar-expand-xl>.container-fluid {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+@media (min-width:1200px) {
+    .navbar-expand-xl {
+        flex-flow: row nowrap;
+        justify-content: flex-start
+    }
+    .navbar-expand-xl .navbar-nav {
+        flex-direction: row
+    }
+    .navbar-expand-xl .navbar-nav .dropdown-menu {
+        position: absolute
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+    .navbar-expand-xl>.container,
+    .navbar-expand-xl>.container-fluid {
+        flex-wrap: nowrap
+    }
+    .navbar-expand-xl .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto
+    }
+    .navbar-expand-xl .navbar-toggler {
+        display: none
+    }
+}
+
+.navbar-expand {
+    flex-flow: row nowrap;
+    justify-content: flex-start
+}
+
+.navbar-expand>.container,
+.navbar-expand>.container-fluid {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.navbar-expand .navbar-nav {
+    flex-direction: row
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem
+}
+
+.navbar-expand>.container,
+.navbar-expand>.container-fluid {
+    flex-wrap: nowrap
+}
+
+.navbar-expand .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto
+}
+
+.navbar-expand .navbar-toggler {
+    display: none
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .9)
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgba(0, 0, 0, .9)
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .5)
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, .7)
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, .3)
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0, 0, 0, .9)
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, .1)
+}
+
+
+
+.navbar-light .navbar-text {
+    color: rgba(0, 0, 0, .5)
+}
+
+.navbar-light .navbar-text a {
+    color: rgba(0, 0, 0, .9)
+}
+
+.navbar-light .navbar-text a:focus,
+.navbar-light .navbar-text a:hover {
+    color: rgba(0, 0, 0, .9)
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .5)
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, .75)
+}
+
+.navbar-dark .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, .25)
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, .1)
+}
+
+
+
+.navbar-dark .navbar-text {
+    color: rgba(255, 255, 255, .5)
+}
+
+
+
+
+/*untuk mengatur ikon*/
+.fa-bars {
+    font-size: 16px !important;
+}
+/*end ikon*/
+
+
+
+/*mega menu*/
+
+
+/* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+
+/* shows the dropdown menu on hover */
+/*.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display:block!important;
+}*/
+
+.navbar .dropdown-menu {
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #eaecf4;
+}
+
+
+
+
+.senkatech-navlink {
+    margin-top: -10px !important;
+}
+/*end mega menu*/
+
+/*untuk mengatur ikon menu pada navbar*/
+.senkatech-ikon-navbar {
+  width: 30px;
+}
+/*end ikon*/
+.senkatech-title-menu {
+  font-size: 12px;
+  font-weight: 550;
+}

@@ -1,75 +1,104 @@
 <!DOCTYPE html>
-
-<html lang="en" class="light">
-<!-- BEGIN: Head -->
+<html>
+<!-- start head -->
 
 <head>
     <meta charset="utf-8">
-    <link href="/assets/images/logo.svg" rel="shortcut icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dashboard | {{ $title }}</title>
-    <!-- BEGIN: CSS Assets-->
-    <link rel="stylesheet" href="/assets/css/app.css" />
-    <!-- END: CSS Assets-->
+    <!-- start boostrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- end bootatrap CSS -->
+    <!-- start font awesome  -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/senkatech_apps_content.css">
+    <link rel="stylesheet" href="assets/css/senkatech_apps_sidebar.css">
+    <link rel="stylesheet" href="assets/css/senkatech_apps_navbar.css">
+    <link rel="stylesheet" href="assets/css/senkatech_apps_global.css">
+    <link rel="stylesheet" href="assets/css/animate/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-<!-- END: Head -->
 
-<body class="py-5">
-    <!-- BEGIN: Notification Content -->
-    @include('dashboard.layouts.notification')
-    <!-- END: Notification Content -->
-
-    <!-- BEGIN: Mobile Menu -->
-    @include('dashboard.layouts.menumobile')
-    <!-- END: Mobile Menu -->
-
-    <div class="flex mt-[4.7rem] md:mt-0">
-
-        <!-- BEGIN: Side Menu -->
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
         @include('dashboard.layouts.sidemenu')
-        <!-- END: Side Menu -->
+        <!-- End of Sidebar -->
 
-        <!-- BEGIN: Content -->
-        <div class="content">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Navbar -->
+                @include('dashboard.layouts.topbar')
+                <!-- End of Navbar -->
 
-            <!-- BEGIN: Top Bar -->
-            @include('dashboard.layouts.topbar')
-            <!-- END: Top Bar -->
-            @yield('container')
+                <!-- Container Fluid -->
+                <div class="container-fluid">
+                    @yield('container')
+                </div>
+                <!-- End of Container Fluid -->
+            </div>
+            <!-- End of Main Content -->
         </div>
-        <!-- END: Content -->
+        <!-- End of Content Wrapper -->
     </div>
-    <!-- BEGIN: Dark Mode Switcher-->
-    <div
-        class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-20 h-10 flex items-center justify-center z-50 mb-10 mr-10 transition-all duration-300 ease-in-out">
-        <div id="icon-container">
-            <!-- Ikon matahari untuk mode terang -->
-            <i data-lucide="sun" class="light-mode-icon"></i>
-            <!-- Ikon bulan untuk mode gelap -->
-            <i data-lucide="moon" class="dark-mode-icon hidden"></i>
-        </div>
-    </div>
-    <!-- END: Dark Mode Switcher-->
-
-    <!-- BEGIN: JS Assets-->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script src="/assets/js/app.js"></script>
-    <script src="/assets/js/ckeditor-classic.js"></script>
-
-    @stack('script')
-    <script>
-        window.onload = function() {
-            @if (session()->has('success'))
-                showSuccessNotification();
-            @endif
-            @if (session()->has('error'))
-                showErrorNotification();
-            @endif
-        };
-    </script>
-    <!-- END: JS Assets-->
-
+    <!-- End of Page Wrapper -->
 </body>
 
 </html>
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+<!-- modal untuk hapus -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h6 class="modal-title">Yakin Ingin Menghapus ?</h6>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Hapus
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Are you sure you want to leave ?</div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger" href="index.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/senkatech_js_kasir.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>

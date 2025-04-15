@@ -1,0 +1,336 @@
+/*----------------------15-10-2019---------------------------*/
+/*class yang digunkan untuk mengatur logo pada navbar aplikasi*/
+/*------------------------------------------------------------*/
+.senkatech-logo {
+  width: 150px;
+  margin-left: -10px;
+}
+
+/*untuk mengatur ikon menu pada navbar*/
+.senkatech-ikon-navbar {
+  width: 25px;
+}
+
+/*end ikon*/
+.senkatech-title-menu {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.img-profile,
+.img-profile {
+  height: 2rem;
+  width: 2rem
+}
+
+/*------------*/
+/*----------*/
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid #262261;
+  border-radius: .25rem;
+}
+
+/*--------15-10-2019-----------*/
+/*class untuk mengatur navbar */
+/*---------------------------*/
+.navbar-light .navbar-brand {
+  color: #6c497d;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.navbar-light .navbar-toggler {
+  font-size: 14px;
+  min-width: 0px;
+}
+
+.navbar-light .navbar-text {
+  font-size: 14px;
+}
+
+.navbar-light .navbar-text a {
+  color: #f77f00;
+  font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
+  color: #50315f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
+  color: #50315f;
+}
+
+.navbar-light .navbar-brand {
+  color: #f15d24 !important;
+  font-size: 14px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+/*----------------*/
+/*end class*/
+/*--------------*/
+
+/*-----------10=5-10-2019-------------*/
+/*class untuk mengatur button logoout*/
+.btn.senkatech-logout {
+  margin-top: 5px;
+  line-height: 14px;
+  background: #fff;
+  color: #fff !important;
+  border-radius: 15px;
+}
+
+/*----------*/
+/*end class*/
+/*--------*/
+
+.dropdown-item {
+  font-size: 12px;
+}
+
+/*--------------15-10-2019---------------*/
+/*class untuk mengatur responsive navbar*/
+/*-------------------------------------*/
+@media (max-width:360px) {
+  .navbar-light .navbar-brand {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+/*----------*/
+/*end class*/
+/*--------*/
+
+
+/*-------------15-10-2019---------------*/
+/*class yang digunkana icon pada navbar*/
+/*------------------------------------*/
+.fa.fa-gears {
+  color: #f15d24;
+}
+
+.fa.fa-resistance {
+  color: #f77f00;
+  font-size: 25px;
+}
+
+.fa-power-off {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+/*----------*/
+/*end class*/
+/*--------*/
+
+
+
+
+/*----------------15-10-2019-------------------
+/*class yang mengatur navbar pada landing page*/
+/*-------------------------------------------*/
+
+nav {
+  background-color: #0A9447;
+}
+
+
+.senkatech-landing-page-logo {
+  width: 250px;
+}
+
+/*end class*/
+/*/*--------*/
+
+
+.navigation-clean-button {
+  background: #fff;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+@media (min-width:768px) {
+  .navigation-clean-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.navigation-clean-button .navbar-brand {
+  font-weight: inherit;
+  color: inherit;
+}
+
+.navigation-clean-button .navbar-brand:hover {
+  color: #e61352;
+}
+
+.navigation-clean-button .navbar-toggler {
+  border-color: #ddd;
+}
+
+.navigation-clean-button .navbar-toggler:hover,
+.navigation-clean-button .navbar-toggler:focus {
+  background: none;
+}
+
+.navigation-clean-button .navbar-toggler {
+  color: #888;
+}
+
+.navigation-clean-button .navbar-collapse,
+.navigation-clean-button .form-inline {
+  border-top-color: #ddd;
+}
+
+.navigation-clean-button.navbar .navbar-nav .nav-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link {
+  color: #465765;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:focus,
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:hover {
+  color: #37434d !important;
+  background-color: transparent;
+}
+
+.navigation-clean-button .navbar-nav>li>.dropdown-menu {
+  margin-top: -5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus,
+.navigation-clean-button .dropdown-menu .dropdown-item {
+  line-height: 2;
+  font-size: 14px;
+  color: #37434d;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus,
+.navigation-clean-button .dropdown-menu .dropdown-item:hover {
+  background: #d49090;
+  color: initial;
+}
+
+.navigation-clean-button .actions .login {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #465765;
+}
+
+.navigation-clean-button .navbar-text .action-button,
+.navigation-clean-button .navbar-text .action-button:active,
+.navigation-clean-button .navbar-text .action-button:hover {
+  background: #56c6c6;
+  border-radius: 20px;
+  font-size: inherit;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  padding: .5rem 1rem;
+  transition: background-color 0.25s;
+  font-size: inherit;
+}
+
+.navigation-clean-button .navbar-text .action-button:hover {
+  background: #66d7d7;
+}
+
+#wrapper {
+  margin-top: 75px;
+}
+
+.navbar.navbar-light.navbar-expand-xl.fixed-top.shadow-sm.navigation-clean-button {
+  min-height: 78px;
+}
+
+.nav.navbar-nav.mr-auto {
+  font-size: 14px;
+}
+
+
+.fa.fa-bar-chart-o {
+  color: #e61352;
+}
+
+.navbar-light .navbar-text {
+  font-size: 14px;
+}
+
+.navbar-light .navbar-text a {
+  color: #f77f00;
+  font-size: 14px;
+}
+
+.btn.btn-light.shadow.action-button {
+  background-color: #e61352;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
+  color: #50315f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
+  color: #000 !important;
+}
+
+.fa.fa-gears {
+  color: #e61352;
+}
+
+.navbar-light .navbar-brand {
+  color: #e61352;
+}
+
+.navbar-light .navbar-brand {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.navbar-light .navbar-toggler {
+  min-width: 0px;
+}
+
+.fa.fa-resistance {
+  color: #f77f00;
+  font-size: 25px;
+}
+
+.fa-cogs {
+  color: #fff;
+}
