@@ -4,28 +4,29 @@
         <div class="row mb-4">
             <div class="col-12 col-lg-4">
                 <div class="card custom-card">
-                    <h5>Harga emas saat ini</h5>
+                    <h5>Harga emas per Gram saat ini</h5>
                     <p class="gold-price">
-                        <span class="icon">🪙</span> Gold (XAU): $0
+                        <span class="icon">🪙</span> Gold (XAU): $ {{ $usd }}
                     </p>
                 </div>
             </div>
             <div class="col-6 col-lg-2">
                 <div class="card custom-card">
                     <h6>Harga Kemarin</h6>
-                    <p>$undefined</p>
+                    <p class="gold-price">$ {{ $yesterday }}
+                    </p>
                 </div>
             </div>
             <div class="col-6 col-lg-2">
                 <div class="card custom-card">
                     <h6>Laba Kemarin</h6>
-                    <p>$0</p>
+                    <p>${{ $laba_per_gram_usd }}</p>
                 </div>
             </div>
             <div class="col-6 col-lg-2">
                 <div class="card custom-card">
                     <h6>Laba Kemarin (%)</h6>
-                    <p>0%</p>
+                    <p>{{ $persentase_laba }}%</p>
                 </div>
             </div>
         </div>

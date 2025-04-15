@@ -20,4 +20,3 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/harga-antam', [HargaEmasController::class, 'ambilHargaAntam']);

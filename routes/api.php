@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/harga-emas', [HargaEmasController::class, 'cekHarga']);
+Route::get('/harga-emas', [HargaEmasController::class, 'cekLabaEmas']);
+Route::get('/harga-kemarin', [HargaEmasController::class, 'cekHargaKemarin']);
