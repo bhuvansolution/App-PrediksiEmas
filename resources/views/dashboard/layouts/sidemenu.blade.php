@@ -19,21 +19,5 @@
             <span>Prediksi</span>
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#senkatechpurchase"
-            aria-expanded="false" aria-controls="senkatechpurchase">
-            <i class="fas fa-history"></i>
-            <span>Histori</span>
-        </a>
-        <div id="senkatechpurchase" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner">
-                <a class="collapse-item senkatech-submenu" href="histori_bulanan.html">
-                    <i class="fas fa-calendar-alt"></i>&nbsp;Bulanan
-                </a>
-                <a class="collapse-item senkatech-submenu" href="histori_tahunan.html">
-                    <i class="fas fa-calendar"></i>&nbsp;Tahunan
-                </a>
-            </div>
-        </div>
-    </li>
+
 </ul>

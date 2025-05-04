@@ -11,7 +11,7 @@ class HargaEmasController extends Controller
 {
     public function cekHarga()
     {
-        $apiKey = '86f94bb030e68c9f2755bdf8cdecf8a7'; // ganti dengan API key kamu
+        $apiKey = '375f964b949f527a37671a2e6f754967'; // ganti dengan API key kamu
         $endpoint = 'https://api.metalpriceapi.com/v1/latest';
         $now = Carbon::now()->format('Y-m-d');
 
@@ -40,28 +40,24 @@ class HargaEmasController extends Controller
 
     public function cekHargaKemarin()
     {
-        $apiKey = '86f94bb030e68c9f2755bdf8cdecf8a7'; // Ganti dengan API key Anda
-        $yesterday = Carbon::yesterday()->format('Y-m-d');
+        $apiKey = '86f94bb030e68c9f2755bdf8cdecf8a7';
+        $baseUrl = 'https://api.metalpriceapi.com/v1/';
 
-        $response = Http::get("https://api.metalpriceapi.com/v1/{$yesterday}", [
-            'api_key'    => $apiKey,
-            'base'       => 'USD',
+        // Ambil harga hari ini dan kemarin
+        $today = Carbon::today();
+        // Ambil data 7 hari terakhir
+        $startDate = $today->copy()->subDays(6)->format('Y-m-d');
+        $endDate = $today->format('Y-m-d');
+
+        $res7Days = Http::get($baseUrl . 'timeframe', [
+            'api_key' => $apiKey,
+            'base' => 'USD',
             'currencies' => 'XAU',
+            'start_date' => $startDate,
+            'end_date' => $endDate,
         ]);
 
-        if (!$response->ok() || !isset($response['rates']['XAU'])) {
-            return response()->json(['error' => 'Gagal mengambil data harga emas kemarin'], 500);
-        }
-
-        $data = $response->json();
-        $pricePerOunceUSD = 1 / $data['rates']['XAU'];
-        $hargaPerGramUSD = $pricePerOunceUSD / 31.1035;
-
-        return response()->json([
-            'date' => $yesterday,
-            'price_usd_per_ounce' => round($pricePerOunceUSD, 2) . ' USD',
-            'price_usd_per_gram' => round($hargaPerGramUSD, 2) . ' USD',
-        ]);
+        dd($res7Days);
     }
 
     public function cekLabaEmas()

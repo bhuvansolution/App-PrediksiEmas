@@ -17,78 +17,39 @@
                     </p>
                 </div>
             </div>
-            <div class="col-6 col-lg-2">
-                <div class="card custom-card">
-                    <h6>Laba Kemarin</h6>
-                    <p>${{ $laba_per_gram_usd }}</p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-2">
-                <div class="card custom-card">
-                    <h6>Laba Kemarin (%)</h6>
-                    <p>{{ $persentase_laba }}%</p>
-                </div>
-            </div>
+
         </div>
 
         <div class="row mb-4">
             <div class="col-12">
-                <h5>Prediksi laba satu tahun ke depan</h5>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="card custom-card">
-                    <h6>CAGR (USD)</h6>
-                    <p>$0</p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="card custom-card">
-                    <h6>CAGR (%)</h6>
-                    <p>0%</p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="card custom-card">
-                    <h6>Moving Average (USD)</h6>
-                    <p>$0</p>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="card custom-card">
-                    <h6>Moving Average (%)</h6>
-                    <p>0%</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mb-4">
-            <div class="col-12">
-                <h5>7 Hari Terakhir</h5>
+                <h5>5 Hari Terakhir</h5>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="card custom-card">
                     <h6>Harga Terendah</h6>
-                    <p>$0</p>
+                    <p>${{ $harga_terendah }}</p>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="card custom-card">
                     <h6>Harga Tertinggi</h6>
-                    <p>$0</p>
+                    <p>${{ $harga_tertinggi }}</p>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="card custom-card">
-                    <h6>Laba 7 Hari (USD)</h6>
-                    <p>$0</p>
+                    <h6>Laba 5 Hari (USD)</h6>
+                    <p>${{ $laba_7_hari }}</p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3">
-                <div class="card custom-card">
-                    <h6>Laba 7 Hari (%)</h6>
-                    <p>0%</p>
-                </div>
-            </div>
+
         </div>
+
+        <p>Prediksi Besok: <strong>{{ ucfirst($prediksi) }}</strong></p>
+        <ul>
+            @foreach ($probabilitas as $kelas => $prob)
+                <li>{{ $kelas }}: {{ number_format($prob, 8) }}</li>
+            @endforeach
+        </ul>
     </div>
 @endsection
